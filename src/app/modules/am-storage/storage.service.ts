@@ -2,6 +2,10 @@ import {Injectable, Inject} from '@angular/core';
 
 import * as _ from 'lodash';
 
+interface Wrapper {
+  value: any;
+}
+
 @Injectable()
 export class StorageService {
 
@@ -14,24 +18,16 @@ export class StorageService {
 
   exists(key) : boolean {
     let found = localStorage.getItem(key);
-    return found != undefined && found != null;
+    return !_.isNil(found);
   }
 
-  getItem(key: string, defaultValue?: any) : any {
-    let item = localStorage.getItem(key);
-    let result = item ? JSON.parse(item) : defaultValue;
-    return result;
+  get(key: string, defaultValue?: any) : any {
+    let found = localStorage.getItem(key);
+    return !_.isNil(found) ? (JSON.parse(found) as Wrapper).value : defaultValue;
   }
 
-  setItem(key: string, value: any){
-    localStorage.setItem(key, JSON.stringify(value));
-  }
-
-  getString(key: string, defaultValue?: string) : string {
-    return localStorage.getItem(key) || defaultValue;
-  }
-
-  setString(key, value: string){
-    localStorage.setItem(key, value);
+  set(key: string, value: any){
+    let wrapper : Wrapper = { value: value };
+    localStorage.setItem(key, JSON.stringify(wrapper));
   }
 }

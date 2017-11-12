@@ -17,8 +17,19 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.storageService.setItem("some_key", {name: 'Jack', surname: 'Dibbler'});
-    this.logger.debug("Is item there?", this.storageService.exists("some_key"));
-    this.logger.debug("AnAnd here it is:", this.storageService.getItem("some_key"));
+    let key = 'some_key_5';
+    this.logger.debug("Is item there?", this.storageService.exists(key));
+    this.storageService.set(key, {name: 'Jack', surname: 'Dibbler'});
+    this.logger.debug("Is item there now?", this.storageService.exists(key));
+    this.logger.debug("And here it is:", this.storageService.get(key));
+
+    this.storageService.remove(key);
+    this.logger.debug("Should not be here anymore?", this.storageService.exists(key));
+
+    this.storageService.set(key, "Hello World");
+    this.logger.debug("Now it's a string", this.storageService.get(key));
+
+    this.storageService.set(key, 12345);
+    this.logger.debug("Now it's a number", this.storageService.get(key));
   }
 }
