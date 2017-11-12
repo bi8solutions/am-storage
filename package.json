@@ -101,7 +101,7 @@
     "zone.js": "^0.8.18"
   },
   "dependencies": {
-    "@bi8/am-logger": "0.0.2"
+    "@bi8/am-logger": "0.0.3"
   },
   "keywords": [
     "Angular",
