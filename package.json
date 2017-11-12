@@ -1,6 +1,6 @@
 {
   "name": "@bi8/am-storage",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Angular Material Storage",
   "main": "./am-storage.umd.js",
   "module": "./am-storage.es5.js",
