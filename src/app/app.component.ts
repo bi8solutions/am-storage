@@ -1,12 +1,14 @@
 import {Component, OnInit} from '@angular/core';
-import { Logger, LogService} from '@bi8/am-logger';
-import {StorageService} from "@bi8/am-storage";
+import {Logger, LogService} from "@bi8/am-logger";
+import {StorageService} from "./modules/am-storage/storage.service";
 
 @Component({
-  selector: 'demo-app',
-  templateUrl: './app.component.html'
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  title = 'app';
 
   logger: Logger;
 

@@ -1,5 +1,7 @@
 import {Injectable, Inject} from '@angular/core';
 
+import * as _ from 'lodash';
+
 @Injectable()
 export class StorageService {
 
