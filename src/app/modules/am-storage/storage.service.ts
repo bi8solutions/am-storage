@@ -23,7 +23,12 @@ export class StorageService {
 
   get(key: string, defaultValue?: any) : any {
     let found = localStorage.getItem(key);
-    return !_.isNil(found) ? (JSON.parse(found) as Wrapper).value : defaultValue;
+    if (!_.isNil(found)){
+      let wrapper : Wrapper = JSON.parse(found) as Wrapper;
+      return wrapper && wrapper.value ? wrapper.value : defaultValue;
+    } else {
+      return defaultValue;
+    }
   }
 
   set(key: string, value: any){
