@@ -1,6 +1,7 @@
 import {Injectable, Inject} from '@angular/core';
 
 import * as _ from 'lodash';
+import {Logger, LogService} from "@bi8/am-logger";
 
 interface Wrapper {
   value: any;
@@ -9,7 +10,11 @@ interface Wrapper {
 @Injectable()
 export class StorageService {
 
-  constructor() {
+  logger: Logger;
+
+  constructor(private logService: LogService) {
+    this.logger = logService.getLogger(this.constructor.name);
+    this.logger.debug("Hello World");
   }
 
   remove(key: string){

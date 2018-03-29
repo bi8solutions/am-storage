@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
 
   constructor(private logService: LogService, private storageService: StorageService) {
     this.logger = logService.getLogger(this.constructor.name);
+    this.logger.warn("hello world");
   }
 
   ngOnInit(): void {

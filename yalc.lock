@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "@bi8/am-logger": {
+      "signature": "f11ab7859f3e84919b1e3da88f5d11e4",
+      "file": true,
+      "replaced": "^5.0.8"
+    }
+  }
+}
