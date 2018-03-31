@@ -11,6 +11,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "package": "ng-packagr",
+    "install:local": "yalc add @bi8/am-logger",
     "publish:local": "yarn run package && cd dist && yalc publish",
     "publish:remote": "",
     "run:serve": "ng serve --ssl --port 8000"

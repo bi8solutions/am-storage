@@ -2,7 +2,7 @@
   "version": "v1",
   "packages": {
     "@bi8/am-logger": {
-      "signature": "f11ab7859f3e84919b1e3da88f5d11e4",
+      "signature": "0018bfaa90ea71f91fca0ef7ac29b6f1",
       "file": true,
       "replaced": "^5.0.8"
     }
