@@ -27,12 +27,6 @@
     "@ngtools/json-schema" "^1.1.0"
     rxjs "^5.5.6"
 
-"@angular/animations@^5.2.0":
-  version "5.2.9"
-  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-5.2.9.tgz#220db9fb5a52a193db0023d721b23ddd25a75770"
-  dependencies:
-    tslib "^1.7.1"
-
 "@angular/cli@~1.7.3":
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-1.7.3.tgz#ac917b69240bb1b340421e9f985135890e0d53b4"
@@ -125,18 +119,6 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/forms@^5.2.0":
-  version "5.2.9"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-5.2.9.tgz#12c45b3a02c398b354f09cc740d914cd904c0c9c"
-  dependencies:
-    tslib "^1.7.1"
-
-"@angular/http@^5.2.0":
-  version "5.2.9"
-  resolved "https://registry.yarnpkg.com/@angular/http/-/http-5.2.9.tgz#2ffea536e181bc97e2867593d57425ea7853285b"
-  dependencies:
-    tslib "^1.7.1"
-
 "@angular/language-service@^5.2.0":
   version "5.2.9"
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-5.2.9.tgz#4838bb6319c99e8f5beb08bdfb392ee9a1173766"
@@ -159,15 +141,13 @@
   dependencies:
     tslib "^1.7.1"
 
-"@bi8/am-logger@file:.yalc/@bi8/am-logger":
-  version "5.2.1-f11ab785"
+"@bi8/am-logger@^5.2.1":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@bi8/am-logger/-/am-logger-5.2.1.tgz#b8057463e518d28309e92cfdbc222970788e164f"
   dependencies:
-    "@angular/animations" "^5.2.0"
     "@angular/common" "^5.2.0"
     "@angular/compiler" "^5.2.0"
     "@angular/core" "^5.2.0"
-    "@angular/forms" "^5.2.0"
-    "@angular/http" "^5.2.0"
     "@angular/platform-browser" "^5.2.0"
     "@angular/platform-browser-dynamic" "^5.2.0"
     "@angular/router" "^5.2.0"

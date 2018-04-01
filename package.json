@@ -13,7 +13,6 @@
     "package": "ng-packagr",
     "install:local": "yalc add @bi8/am-logger",
     "publish:local": "yarn run package && cd dist && yalc publish",
-    "publish:remote": "",
     "run:serve": "ng serve --ssl --port 8000"
   },
   "private": false,
@@ -21,8 +20,7 @@
     "type": "git",
     "url": "https://github.com/bi8solutions/am-storage.git"
   },
-  "peerDependencies": {
-  },
+  "peerDependencies": {},
   "dependencies": {
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
@@ -30,7 +28,7 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
-    "@bi8/am-logger": "file:.yalc/@bi8/am-logger",
+    "@bi8/am-logger": "^5.2.1",
     "core-js": "^2.4.1",
     "lodash": "^4.17.4",
     "rxjs": "^5.5.6",
